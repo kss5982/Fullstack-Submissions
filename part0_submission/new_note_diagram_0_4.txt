@@ -1,0 +1,19 @@
+New Note Diagram
+
+
+
+broswer->server: HTTP POST https:/fullstack-exampleapp.herokkuapp.com/new_note
+server->broswer: Status Code 302
+
+Note: on the server-side, the form data will be appended to the note list.
+At this point, the server will refresh
+On the broswer side, the intial GET requests will execute again
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js 
+
+Note: the list will now be updated with the new note data
